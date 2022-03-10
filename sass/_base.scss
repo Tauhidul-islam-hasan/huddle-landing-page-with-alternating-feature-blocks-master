@@ -1,0 +1,72 @@
+:root {
+    --color-primary: hsl(322, 100%, 66%);
+
+    --color-Grey-light-1: hsl(193, 100%, 96%);
+
+    --color-grey-dark-1: hsl(192, 100%, 9%);
+    --color-Grey-dark-2: hsl(208, 11%, 55%);
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+
+
+}
+
+$bp-largest: 75em; ///1200px
+$bp-large: 68.75em; ///1100px
+$bp-medium: 60.5em; ///967px
+$bp-small: 53.25em; ///852px
+$bp-smaller:45.93em; ///735px
+$bp-smallest: 18.25em; ///375px
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+//1rem=10px, 10px/16px =62.5%
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.8rem;
+}
+
+p {
+    color: var(--color-Grey-dark-2);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        text-shadow: .1rem .1rem .2rem rgba(255, 255, 255, 0.692);
+    }
+}
+
+.attribution {
+    position: relative;
+    top: 5rem;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
